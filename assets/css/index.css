@@ -1,7 +1,8 @@
 img{
     width: auto;
-    height: 50%;
-    max-width: 50%;
+    height: auto;
+    max-width: 40%;
+    max-height: 20%;
     padding-bottom:20px;
     padding-top: 40px;
     margin-top: auto;
