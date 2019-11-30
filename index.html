@@ -1,9 +1,22 @@
 <html>
     <head>
             <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <link rel="stylesheet" href="assets/css/index.css">
+            <script type="text/javascript" src="assets/js/main.js"></script>
     </head>
     <body>
-        <div id="greeting">{{message}}</div>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+        <div id="page"></div>
+        <div id="content">
+            <h1 class="centered">Random Wolf Pic Generator</h1>
+            <div id="greeting" class="centered">{{message}}</div>
+            <div id="action">
+            <img id="wolf-pic" class = "centered" :src="image"> 
+            <div class="centered">
+                <button id="activator" class="centered" v-on:click="changeImage">Give me wolves!</button>
+            </div>
+            </div>
+            <script type="text/javascript" src="assets/js/main.js"></script>
+        </div>
+        
     </body>
 </html>
