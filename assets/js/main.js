@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-global.fetch = fetch;
 var greeting = new Vue({
     el: "#greeting",
     data:{
