@@ -8,12 +8,23 @@ var greeting = new Vue({
 var action = new Vue({
     el: "#action",
     data:{
-        image: "./images/initial.jpg"
+        image: "./images/1.jpg"
         
     },
     methods:{
+            
         changeImage: function(){
-        this.image="./images/mountain.jpg"
+            var num_images = 3;
+            var curr_image = this.image;
+            var new_image;
+            do{
+            var picture_number = Math.floor(Math.random() * (num_images)+1);
+            picture_number.toString();
+            new_image="./images/"+ picture_number +".jpg";
+            } while(curr_image == new_image);
+
+            this.image = new_image;
+            
         }
     }
 })
