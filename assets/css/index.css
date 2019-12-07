@@ -62,4 +62,7 @@ body{
         border-color: black;
         border-width: 2px;
     }
+    #page{
+        background-image: url('../../images/mountain_phone.jpg');
+    }
 }
